@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffb6c1, #fff59d);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+/* Headings */
+h1, h2 {
+  color: #CD2C58;
+}
+
+/* Card (for first page question) */
+.card {
+  background: #fff59d;
+  border-radius: 20px;
+  padding: 30px;
+  width: 80%;
+  max-width: 400px;
+  margin: 100px auto;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #fff59d;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ff4081;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #CD2C58;
+  color: white;
+}
+
+/* Pink custom button */
+.btn-pink {
+  background-color: white;
+  color: #ff4081;
+  border: 2px solid #ff4081;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+   display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: #ff4081;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Popup overlay */
+.popup-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 182, 193, 0.8);
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content */
+.card-content {
+  background: linear-gradient(135deg, #ffb6c1, #fff59d);
+  border-radius: 15px;
+  padding: 30px 40px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-content img {
+  width: 100px;
+  margin-top: 15px;
+}
+.carousel-inner img {
+  width: 80% !important;       
+  max-width: 500px;            
+  margin: 0 auto;              
+  border-radius: 20px;
+}
+
+/* Optional: Carousel caption text (Bootstrap) */
+.carousel-caption p {
+  color: #ff4081;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#closePopup {
+  background-color: white;
+  color: #ff4081;
+  border: 2px solid #ff4081;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#closePopup:hover {
+  background-color: #ff4081;
+  color: white;
+  transform: scale(1.05);
+}
